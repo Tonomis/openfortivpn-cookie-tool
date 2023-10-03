@@ -24,4 +24,4 @@ fi
 cookie=$(echo $1 | sed 's/SVPNCOOKIE://g')
 
 # Launch the VPN
-openfortivpn -c $config_path --cookie $cookie
+openfortivpn -c $config_path --cookie $cookie --pppd-accept-remote
